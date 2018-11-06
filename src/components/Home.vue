@@ -1,12 +1,14 @@
 <template>
  <div>
-   Hello World
+   <v-layout>
+   this is home
+   </v-layout>
  </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   props: {
     msg: String
   }
