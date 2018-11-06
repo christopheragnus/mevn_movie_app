@@ -23,6 +23,7 @@
            </router-link>
          </v-list>
        </v-navigation-drawer>
+
         <v-toolbar color="indigo" dark fixed app>
          <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
          <v-toolbar-title>Home</v-toolbar-title>
@@ -31,6 +32,7 @@
            <v-btn flat v-bind:to="{ name: 'AddMovie' }">Add Movie</v-btn>
          </v-toolbar-items>
        </v-toolbar>
+       
        <v-content>
          <v-container fluid>
            <div id="app">

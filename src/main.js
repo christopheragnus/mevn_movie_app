@@ -5,7 +5,7 @@ import BootstrapVue from 'bootstrap-vue';
 import Vue from 'vue'
 import Vuetify from 'vuetify';
 import App from './App.vue'
-import router from './router'
+import router from './routes/index'
 
 Vue.config.productionTip = false
 
