@@ -1,7 +1,12 @@
 <template>
  <div>
-   <v-layout>
-   this is home
+   <v-layout row wrap>
+    <v-flex xs12>
+      <div v-text="message"></div>
+    </v-flex>
+    <v-flex xs12>
+      <v-btn color="primary" v-on:click="reply">Reply</v-btn>
+    </v-flex>
    </v-layout>
  </div>
 </template>
@@ -11,8 +16,18 @@ export default {
   name: 'Home',
   props: {
     msg: String
+  },
+  data() {
+    return {
+      message: 'Hello, hows it going?',
+    };
+  },
+  methods: {
+    reply() {
+      this.message = "I'm doing great. Thank you."
+    }
   }
-}
+} ;
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
