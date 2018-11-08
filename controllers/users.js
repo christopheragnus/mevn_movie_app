@@ -13,7 +13,11 @@ const User = require('../models/User.js');
       });
 
       User.createUser(newUser, (error, user) => {
-        if (error) { console.log(error); }
+        if (error) { 
+            res.status(422).json({
+                message:'Something went wrong. Please try again!',
+            });
+         }
         res.send({ user });
       });
   }); 
